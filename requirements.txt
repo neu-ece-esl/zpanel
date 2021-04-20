@@ -1,10 +1,6 @@
-git+https://github.com/bottlepy/bottle.git@master
-cheroot==6.0.0
-CherryPy==13.0.0
-jaraco.classes==1.4.3
-more-itertools==4.0.1
-portend==2.2
-pytz==2017.3
-six==1.11.0
-tempora==1.9
-zmq==0.0.0
+bottle @ git+https://github.com/bottlepy/bottle.git@f9b1849db4dd724e36a93a1032be592193fba581
+cheroot==8.5.2
+jaraco.functools==3.3.0
+more-itertools==8.7.0
+pyzmq==22.0.3
+six==1.15.0
