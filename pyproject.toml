@@ -6,9 +6,10 @@ authors = ["Bruno <brunosmmm@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-cheroot = "^8.5.2"
+cheroot = "^9.0.0"
 bottle = {git = "https://github.com/bottlepy/bottle.git", rev = "master"}
-pyzmq = "^22.0.3"
+pyzmq = "^25.0.0"
+simpleaudio = "^1.0.4"
 
 [tool.poetry.dev-dependencies]
 
