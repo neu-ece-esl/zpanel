@@ -11,6 +11,7 @@ setup(
     install_requires=[
         "pyzmq",
         "cheroot",
+        "simpleaudio",
         "bottle @ git+https://github.com/bottlepy/bottle.git@master#egg=bottle",
     ],
     author="Bruno Morais",

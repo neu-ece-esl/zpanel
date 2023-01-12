@@ -34,12 +34,26 @@
 
       function setLEDState(led, state)
       {
-      if (state) {
+      if (state >= 75) {
+      $("#ledstate-"+led).removeClass("lightRed");
+      $("#ledstate-"+led).removeClass("orange");
       $("#ledstate-"+led).addClass("red");
+      }
+      else if (state < 75 && state > 25) {
+      $("#ledstate-"+led).removeClass("red");
+      $("#ledstate-"+led).removeClass("orange");
+      $("#ledstate-"+led).addClass("lightRed");
+      }
+      else if (state <= 25 && state > 0){
+      $("#ledstate-"+led).removeClass("red");
+      $("#ledstate-"+led).removeClass("lightRed");
+      $("#ledstate-"+led).addClass("orange");
       }
       else
       {
       $("#ledstate-"+led).removeClass("red");
+      $("#ledstate-"+led).removeClass("lightRed");
+      $("#ledstate-"+led).removeClass("orange");
       }
       }
 
